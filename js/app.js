@@ -1,5 +1,5 @@
 class Persona {
-  constructor(nombre, edad, dni, sexo, peso, altura, anoNacimiento) {
+  constructor(nombre, edad, sexo, peso, altura, anoNacimiento) {
     this.nombre = nombre;
     this.edad = edad;
     this.sexo = sexo;
@@ -65,6 +65,6 @@ const altura = parseInt(document.getElementById("altura").value);
 const anoNacimiento = parseInt(document.getElementById("anioNacimiento").value);
 
 const usuario = new Persona(nombre,edad,sexo,peso,altura,anoNacimiento)
-console.log(usuario)
+usuario.mostrarDatos()
 });
 
